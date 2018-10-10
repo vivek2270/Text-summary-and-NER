@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=10">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Text summarisation and entity extraction by Vivek Kher</title>
+ 
+</head>
+<body>
+<header>
+    <a href="#"><img src="/img/logo.png" alt=""> Text summarisation and entity extraction by Vivek Kher</a>
+</header>
+<section class="container">
+        <div class="row">
+            <div class="col-md-3">
+                
+               <form action="/summarised" method="post" enctype="multipart/form-data" >
+      <span class="btn btn-default btn-file">
+        News URL: <input type="text" name="news_url">
+      </span>
+
+    <input type="submit" value="Summarised" class="btn btn-primary">
+</form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                Summary:
+                <div class="text-block">
+                    {{ summaried_text }}
+                </div>
+            <br />
+                Entites:
+                <div class="text-block">
+                    {{ entities }}
+                </div>
+            </div>
+        </div>
+    </section>
+<body>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+</body>
+</html>

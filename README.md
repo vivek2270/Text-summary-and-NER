@@ -6,10 +6,12 @@ gcc, make, Python 3.5, python-pip, virtualenv
 
 ## Instalation
 Git clone https://github.com/vivek2270/Text-summary-and-NER/
+
 cd Text-summary-and-NER
 
 ### Create a virtualenv, and activate this:
 $ virtualenv env 
+
 $ source env/bin/activate
 
 ### After, install all necessary to run:
